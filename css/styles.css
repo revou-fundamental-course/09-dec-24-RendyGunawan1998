@@ -1,1 +1,260 @@
 /* STYLESHEET */
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav > a{
+    border: 1px solid;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-decoration: none;
+    color: black;
+    cursor: auto;
+}
+
+.home-icon{
+    border: 1px solid;
+    height: 50px;
+    width: 50px;
+    background-image: url(https://picsum.photos/200);
+    background-position: center;
+    border-radius: 50%;
+}
+
+.rating-user {
+    padding-left: 15px;
+}
+
+.banner-images{
+    border: 1px solid;
+    height: 320px;
+    
+    background-size: cover;
+    background-position: center;  
+}
+
+.banner-1{
+    background-image: url(https://picsum.photos/700);
+    display: none;
+}
+.banner-2 {
+    background-image: url(https://picsum.photos/500);
+    display: none;
+}
+.banner-3 {
+    background-image: url(https://picsum.photos/300);
+    display: block;
+}
+
+.profile-rate {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 300px;
+    gap: 10px;
+}
+
+.profile-rate-image { 
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    background-image: url(https://picsum.photos/100);
+    background-position: center;
+    border-radius: 50%;
+}
+
+.profile-rate-comment{
+    /* padding: 2px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-name {
+    padding-bottom: 3px;
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+}
+
+.profile-description { 
+    padding-top: 3px;
+    font-size: 1rem;
+    color: lightgrey;
+    margin: 0;
+}
+
+.info-travel {
+    text-align: left;
+    font-size: 14px;
+}
+
+.poin {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.poin-text {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #4a4a4a;
+}
+
+.number {
+    width: 32px;
+    height: 32px;
+    background-color: #e0e5eb;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    font-weight: bold;
+    color: #8c9bae;
+    margin-right: 15px;
+}
+
+.main-content{
+    display: flex;
+    gap: 24px;
+}
+
+.main-content-header{
+    text-align: center;
+}
+
+.main-item {
+    flex: 1;
+}
+
+form{
+    background-color: seashell;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+ label {
+     display: block;
+     margin-bottom: 5px;
+ }
+
+ input[type="text"]
+ 
+ input[type="email"] {
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 15px;
+     border: 1px solid #ccc;
+ }
+
+.main-package-header {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin-top: 24px;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+button[type="submit"] {
+    background-color: #29323D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+button[type="call"] {
+    background-color: #29323D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 80%;
+}
+
+.our-packages-section{
+    padding: 20px;
+}
+
+.container-package{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    margin: 0 auto;
+}
+
+.item-package{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.item-package >h3 {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #222;
+}
+
+.item-package>p {
+    margin: 10px 0 0;
+    font-size: 0.7rem;
+    color: #666;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 10px;
+    background-color: #e8f0f8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #8fa1b7;
+}
+
+.icon-lampu::before {
+    content: "💡";
+}
+
+.icon-bintang::before {
+    content: "⭐";
+}
+
+footer{
+    margin-top: 24px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+    .main-header{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-content{
+        flex-direction: column;
+    }
+
+    .main-item{
+        flex: 1;
+        padding-bottom: 32px;
+        padding-top: 32px;
+    }
+}

@@ -1,6 +1,157 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="D:\REVOU\09-dec-24-RendyGunawan1998\css\styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css\styles.css">
     </head>
+
+    <body>
+        <header class="main-header">
+            <div class="home-icon"></div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#our-packages-section">Our Package</a>
+                <a href="#call-us">Call Us</a>
+            </nav>
+        </header>
+        <hr style="border: 2px solid;"/>
+        
+        <main>
+            <header class="main-content-header">
+                <h1>Your Trusted Travel Agent's</h1> 
+                <h4>Your Happiness is Our Happiness</h4>
+            </header>
+            
+            <!-- Main Content -->
+            <section class="main-content">
+                <!-- Banner auto slide -->
+                 <!-- Gunakan auto slide karena di posisi di kiri -->
+                <aside class="main-item"  >
+                    <div class="banner-images banner-1"></div>
+                    <div class="banner-images banner-2"></div>
+                    <div class="banner-images banner-3"></div>
+                    <!-- <div>
+                        <img class="img-slideshow" src="https://picsum.photos/700"/>
+                        <img class="img-slideshow" src="https://picsum.photos/200"/>
+                        <img class="img-slideshow" src="https://picsum.photos/300" />
+                       
+                    </div> -->
+
+                    
+                    <header class="rating-user">
+                        <h3 style="color: #333;">"Liburan jadi menyenangkan bersama Travel<br>Agentku"</h1>
+                        <p>
+                            <div class="profile-rate">
+                               <div class="profile-rate-image">
+                                
+                               </div>
+                               <div class="profile-rate-comment">
+                                    <h3 class="profile-name">Florence Hughes</h3>
+                                    <p class="profile-description">Ibu Rumah Tangga, 28</p>
+                               </div>
+                            </div>
+                           
+                        </p>
+                    </header>
+                    
+                </aside>
+
+                <!-- FORM CONTACT US -->
+                <form class="main-item">
+                    <h2>Contact Us</h2>
+                    <p>Sales akan menghubungi Anda 1x24 jam setelah data kami terima.</p>
+                    <label for="name">Username:</label>
+                    <input required type="text" id="name"  placeholder="First and last name">
+                    <p></p>
+                    <label for="email">Email Address:</label>
+                    <input required type="email" id="email" name="email" placeholder="example@email.com">
+                    <p></p>
+                    <label for="interest">What are you interested in?</label>
+                    <select required id="interest" name="interest" style="display: block;width: 68%;">
+                        <option value="">Select option</option>
+                    </select>
+                    <p></p>
+                    <button type="button" id="button-click" onclick="validateForm()">SEND</button>
+                </form>
+            </section>
+            <!-- SECTION POIN -->
+            <section style="display: flex; padding-top: 25px;">
+                <header class="info-travel" style="flex: 1;">
+                    <p>
+                    <h3>Travel Agentku membuat perjalananmu lebih menarik. Jelajahi banyak tempat dengan agen dari Travel Agentku untuk
+                        membuat perjalananmu lebih menyenangkan. Apa keuntungan Travel Agentku?</h3>
+                    </p>
+                    <div class="poin">
+                        <div class="number">1</div>
+                        <p class="poin-text">Harga lebih terjangkau</p>
+                    </div>
+                    <div class="poin">
+                        <div class="number">2</div>
+                        <p class="poin-text">Banyak list destinasi menarik</p>
+                    </div>
+                    <div class="poin">
+                        <div class="number">3</div>
+                        <p class="poin-text">Perjalanan lebih tertata</p>
+                    </div>
+                </header>
+                <p style="flex: 1;"></p>
+            </section>
+            <!-- Our Package -->
+            <section id="our-packages-section">
+                <header class="main-package-header">
+                    <h1>Our Packages</h1>
+                    <!-- ROW 1 -->
+                    <div class="container-package">
+                        <div class="item-package">
+                            <div class="icon-lampu"></div>
+                            <h3>Bali</h3>
+                            <p>Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner yang menarik</p>
+                        </div>
+                        <div class="item-package">
+                            <div class="icon-lampu"></div>
+                            <h3>Japan</h3>
+                            <p>Travel dan wisata di Japan. kunjungi cagar budaya dan kuliner yang menarik</p>
+                        </div>
+                        <div class="item-package">
+                            <div class="icon-lampu"></div>
+                            <h3>Singapore</h3>
+                            <p>Travel dan wisata di Singapore. kunjungi cagar budaya dan kuliner yang menarik</p>
+                        </div>
+                    </div>
+                    <!-- ROW 2 -->
+                    <div class="container-package">
+                        <div class="item-package">
+                            <div class="icon-bintang"></div>
+                            <h3>Bandung</h3>
+                            <p>This description supports and extend the bullet point above.</p>
+                        </div>
+                        <div class="item-package">
+                            <div class="icon-bintang"></div>
+                            <h3>Surabaya</h3>
+                            <p>This description supports and extend the bullet point above.</p>
+                        </div>
+                        <div class="item-package">
+                            <div class="icon-bintang"></div>
+                            <h3>London</h3>
+                            <p>This description supports and extend the bullet point above.</p>
+                        </div>
+                    </div>
+                </header>
+            </section>
+            <hr style="border: 1pt solid;" />
+        </main>
+        <footer id="call-us">
+            <h1>Need Help? Contact Us</h1>
+            <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+            book.</h4>
+            <p></p>
+            <div style="display: flex;justify-content: center;">
+                <button type="call">CALL TO ACTION</button>
+            </div>
+          
+        </footer>
+        <script src="js\script.js"></script>
+    </body>
 </html>
